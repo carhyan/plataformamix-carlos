@@ -4,6 +4,7 @@ body{
     padding: 0px;
     background-color: #f9f9f9;
     color: #333;
+    justify-content: center;
 }
 
 header{
@@ -23,7 +24,7 @@ h1{
     font-size: 36px;
 }
 
-header p{ 
+header p{
     font-size: 18px;
     margin-top: 10px;
 }
@@ -31,23 +32,25 @@ header p{
 .main-index{
     display: grid;
     /* auto - 1fr (fração) - px - % */
-    grid-template-columns: auto auto auto; 
+    grid-template-columns: auto auto auto;
     padding: 20px;
-    justify-content: center; /* Alinhamento horizontal */
+    justify-content: center;
+    /* Alinhamento horizontal */
     background-color: #fff;
-    gap: 20px; /*Espaco entre elementos*/
+    gap: 20px;
+    /*Espaco entre elementos*/
+
+
 }
 
 .main-index a{
-    transition: transform 0.3s /* tempo de transicao*/
-    /*foi aplicado a propriedade de transição com
-    uma duração de 0.3 segundos (0.3s) em sua animação de transformação.
-    */
+    transition: transform 0.3s
+        /* tempo de transicao*/
 }
 
 .main-index a:hover{
-    transform: scale(1.05); /* escala - zoom */
-    /* Os elementos irão aumentar em 5% ao passar o mouse sobre eles.*/
+    transform: scale(1.05);
+    /* escala - zoom */
 }
 
 .main-videos h1{
@@ -58,7 +61,6 @@ header p{
 .main-videos video{
     margin: auto;
     display: block;
-    max-width: 700px;
 }
 
 .main-videos a{
