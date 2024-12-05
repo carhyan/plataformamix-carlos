@@ -1,0 +1,71 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img{
+    max-width: 80%;
+    /* max-width: 700px; */
+}
+
+h1{
+    color: #553382;
+    font-size: 36px;
+}
+
+header p{ 
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.main-index{
+    display: grid;
+    /* auto - 1fr (fração) - px - % */
+    grid-template-columns: auto auto auto; 
+    padding: 20px;
+    justify-content: center; /* Alinhamento horizontal */
+    background-color: #fff;
+    gap: 20px; /*Espaco entre elementos*/
+}
+
+.main-index a{
+    transition: transform 0.3s /* tempo de transicao*/
+    /*foi aplicado a propriedade de transição com
+    uma duração de 0.3 segundos (0.3s) em sua animação de transformação.
+    */
+}
+
+.main-index a:hover{
+    transform: scale(1.05); /* escala - zoom */
+    /* Os elementos irão aumentar em 5% ao passar o mouse sobre eles.*/
+}
+
+.main-videos h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+.main-videos video{
+    margin: auto;
+    display: block;
+    max-width: 700px;
+}
+
+.main-videos a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    margin-top: 20px;
+    font-size: 20px;
+}
